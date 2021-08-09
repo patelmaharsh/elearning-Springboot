@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Amdocs.elearning.StaticConfig;
-import com.Amdocs.elearning.models.User;
+import com.Amdocs.elearning.models.Other;
 import com.Amdocs.elearning.repositories.UserRepository;
 
 @RestController
@@ -23,15 +23,15 @@ public class UserController {
 	UserRepository userRepo;
 	
 	@GetMapping("/users")
-	public List<User> getAllUser(){
+	public List<Other> getAllUser(){
 		return userRepo.findAll();
 	}
 	@GetMapping("/users/{email}")
-	public Optional<User> getUserByEmail(@PathVariable String email){
+	public Optional<Other> getUserByEmail(@PathVariable String email){
 		return userRepo.findByEmail(email);
 	}
 	@PostMapping("/users")
-	public void postUser(@RequestBody User u) {
+	public void postUser(@RequestBody Other u) {
 		userRepo.save(u);
 	}
 	@DeleteMapping("/users/id/{userId}")
