@@ -1,5 +1,5 @@
 package com.Amdocs.elearning;
 
 public class StaticConfig {
-	public static final String crossOrigin = "http://localhost:3000";
+	public static final String crossOrigin = "https://react-elearning-app.herokuapp.com";
 }
