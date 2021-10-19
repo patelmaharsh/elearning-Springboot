@@ -12,6 +12,17 @@ public class Admin {
 	private String name;
 	private String email;
 	private String password;
+	
+	public Admin() {
+		super();
+	}
+	public Admin(int adminId, String name, String email, String password) {
+		super();
+		this.adminId = adminId;
+		this.name = name;
+		this.email = email;
+		this.password = password;
+	}
 	public int getAdminId() {
 		return adminId;
 	}

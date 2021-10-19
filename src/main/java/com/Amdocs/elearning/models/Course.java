@@ -16,6 +16,18 @@ public class Course {
 	private String cDesc;
 	private int cFees;
 	private String cResource;
+	
+	public Course() {
+		super();
+	}
+	public Course(int courseId, String cName, String cDesc, int cFees, String cResource) {
+		super();
+		this.courseId = courseId;
+		this.cName = cName;
+		this.cDesc = cDesc;
+		this.cFees = cFees;
+		this.cResource = cResource;
+	}
 	public int getCourseId() {
 		return courseId;
 	}

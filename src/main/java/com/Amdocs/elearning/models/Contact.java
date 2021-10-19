@@ -17,6 +17,19 @@ public class Contact {
 	private String email;
 	private long phoneNo;
 	private String message;
+	
+	public Contact() {
+		super();
+	}
+	public Contact(int contactId, int userId, String name, String email, long phoneNo, String message) {
+		super();
+		this.contactId = contactId;
+		this.userId = userId;
+		this.name = name;
+		this.email = email;
+		this.phoneNo = phoneNo;
+		this.message = message;
+	}
 	public int getContactId() {
 		return contactId;
 	}

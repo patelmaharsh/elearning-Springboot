@@ -20,6 +20,22 @@ public class Other {
 	private String password;
 	private String uploadPhoto;
 	
+	
+	public Other() {
+		super();
+	}
+	public Other(int userId, String name, long phoneNo, String email, String address, Date regDate, String password,
+			String uploadPhoto) {
+		super();
+		this.userId = userId;
+		this.name = name;
+		this.phoneNo = phoneNo;
+		this.email = email;
+		this.address = address;
+		this.regDate = regDate;
+		this.password = password;
+		this.uploadPhoto = uploadPhoto;
+	}
 	public String getEmail() {
 		return email;
 	}

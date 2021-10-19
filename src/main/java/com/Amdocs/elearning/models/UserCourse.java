@@ -21,6 +21,20 @@ public class UserCourse {
 	private int cFees;
 	private String cDesc;
 	
+	public UserCourse() {
+		super();
+	}
+	public UserCourse(int userCourseId, int userId, int courseId, Date timestamp, String cName, int cFees,
+			String cDesc) {
+		super();
+		this.userCourseId = userCourseId;
+		this.userId = userId;
+		this.courseId = courseId;
+		this.timestamp = timestamp;
+		this.cName = cName;
+		this.cFees = cFees;
+		this.cDesc = cDesc;
+	}
 	public String getcName() {
 		return cName;
 	}

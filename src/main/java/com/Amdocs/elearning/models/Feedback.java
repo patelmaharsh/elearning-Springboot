@@ -16,6 +16,18 @@ public class Feedback {
 	private String name;
 	private String email;
 	private String feedback;
+	
+	public Feedback() {
+		super();
+	}
+	public Feedback(int fId, int userId, String name, String email, String feedback) {
+		super();
+		this.fId = fId;
+		this.userId = userId;
+		this.name = name;
+		this.email = email;
+		this.feedback = feedback;
+	}
 	public int getfId() {
 		return fId;
 	}
